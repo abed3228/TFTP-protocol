@@ -1,9 +1,23 @@
 # TFTP protocol(c code)
- TFTP protocol in c 
+<b><u>Run server:</u></b>
+<br>
+./server
+<b><u>Run client:</u></b>
+<br>
+<b><u>get file from the server:</u></b>
+<br>
+./client get $filename
+<b><u>set file to the server:</u></b>
+<br>
+./client set $filename
+<b><u>example:</u></b>
+</br>
+./client get receive.c
+./client set send.c
+</div>
 
-
-# TFTP protocol
-<div="rtl>
+# protocol
+<div dir="rtl">
 TFTP הוא פרוטוקול תקשורת המשמש להעברת קבצים ובולט עקב פשטותו.
 הוא משמש בדרך כלל להעברה אוטומטית של קובצי אתחול וקונפיגורציהconfiguration or boot files) )
  בין מחשבים ברשת מקומית.
@@ -14,4 +28,14 @@ TFTP הוא פרוטוקול תקשורת המשמש להעברת קבצים �
 זהו אלמנט של פרוטוקול אתחול רשת, המיושם בחומרה של כרטיס הרשת.
 גרסה העדכנית של TFTP מוגדרת בתקן RFC 1350 בניגוד לרוב פרוטוקולי העברת הקבצים
 (כגון ( FTP , HTTP פרוטוקולTFTP  עובד מעל  UDPבפורט 69 ולא מעל TCP .
-</dv>
+</div>
+</br>
+</br>
+<div dir="rtl">
+בשל העיצוב הפשוט שלו, ניתן ליישם את TFTP באמצעות כמות קטנה של זיכרון
+זה שימושי לאתחול מערכות משובצות כמו נתבים שאין להם מקום לאחסון נתונים
+הוא משתמש להעברת כמויות קטנות של נתונים בין מארחים ברשת כגון 
+     ip phone firmware or operating system images
+כאשר מערכת משובצת  היא משתמשת בTFTP כדי לטעון את kernel image מהרשת (שרת)
+TFTP רק קורא וכותב קבצים (אן מיילים) מול שרת מרוחק, הוא לא יכול ליצור תיקיות ואין לו הוראות לאימות משתמשים
+</div>
