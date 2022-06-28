@@ -2,18 +2,23 @@
 <b><u>Run server:</u></b>
 <br>
 ./server
+</br>
 <b><u>Run client:</u></b>
 <br>
 <b><u>get file from the server:</u></b>
 <br>
 ./client get $filename
+</br>
 <b><u>set file to the server:</u></b>
 <br>
 ./client set $filename
+</br>
 <b><u>example:</u></b>
 </br>
 ./client get receive.c
+</br>
 ./client set send.c
+</br>
 </div>
 
 # protocol
